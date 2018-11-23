@@ -27,9 +27,9 @@ client.on('message', message => {
             message.guild.members.forEach(m => {
        if(!message.member.hasPermission('ADMINISTRATOR')) return;
                 var bc = new Discord.RichEmbed()
-                .addField('» ??????? :', `${message.guild.name}`)
-                .addField('» ?????? : ', `${message.author.username}#${message.author.discriminator}`)
-                .addField(' » ??????? : ', args)
+                .addField('Â» Server Name :', `${message.guild.name}`)
+                .addField('Â» User : ', `${message.author.username}#${message.author.discriminator}`)
+                .addField(' Â» BC : ', args)
                 .setColor('#ff0000')
                 // m.send(`[${m}]`);
                 m.send(`${m}`,{embed: bc});
